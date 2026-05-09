@@ -37,7 +37,8 @@ html {
 
 body {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -158,8 +159,11 @@ body {
     }
 
     .creator-name-text {
-    color: var(--gray950);
-    font: var(--text-preset-3-bold);
-    font-size: 1.4rem;
-}
+        font-size: 1.4rem;
+    }
+
+    .card-container:focus, .card-container:hover {
+        translate: 0px 0px;
+        box-shadow: 8px 8px 0 0 #000000;
+    }
 }
