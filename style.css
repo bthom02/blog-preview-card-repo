@@ -59,11 +59,11 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--gap300);
-    transition: translate 0.5s ease, box-shadow 0.5s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .card-container:focus, .card-container:hover {
-    translate: -8px -8px;
+    transform: translate(-8px, -8px);
     box-shadow: 16px 16px 0 0 #000000;
 }
 
@@ -163,7 +163,7 @@ body {
     }
 
     .card-container:focus, .card-container:hover {
-        translate: 0px 0px;
+        transform: translate(0px, 0px);
         box-shadow: 8px 8px 0 0 #000000;
     }
 }
